@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sign Up | Forza Horizon</title>
+  <link rel="stylesheet" href="signup.css" />
+</head>
+<body>
+    <img src="webbg.png" class="bg-img" />
+  <div class="signup-container">
+    <div class="signup-box">
+      <img src="logo.png" alt="Logo" class="logo" />
+      <h2>Create Account</h2>
+      <form action="homepage.html">
+        <input type="text" placeholder="Full Name" required />
+        <input type="email" placeholder="Email" required />
+        
+        <div class="password-group">
+          <input type="password" id="password" placeholder="Password" required />
+          <span class="toggle-password" onclick="togglePassword('password', this)">👁️</span>
+        </div>
+        
+        <div class="password-group">
+          <input type="password" id="confirm" placeholder="Confirm Password" required />
+          <span class="toggle-password" onclick="togglePassword('confirm', this)">👁️</span>
+        </div>
+        
+        <button type="submit">Sign Up</button>
+        <p class="bottom-text">Already have an account? <a href="login.html">Login</a></p>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    function togglePassword(id, elem) {
+      const input = document.getElementById(id);
+      const isPassword = input.type === "password";
+      input.type = isPassword ? "text" : "password";
+      elem.textContent = isPassword ? "🙈" : "👁️";
+    }
+  </script>
+</body>
+</html>

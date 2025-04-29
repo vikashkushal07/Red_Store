@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>RedStore |Login</title>
+  <link rel="stylesheet" href="login.css">
+</head>
+<body>
+    <img src="webbg.png" alt="Background" class="bg-image">
+    <div class="login-box">
+      <img src="logo.png" alt="Logo" class="logo">
+
+      <h2>Welcome Back</h2>
+      <form action="homepage.html" >
+        <input type="text" placeholder="Username or Email" required>
+        <div class="password-field">
+          <input type="password" id="password" placeholder="Password" required>
+          <span id="togglePassword" class="eye-icon">👁️</span>
+        </div>
+        <button type="submit">Login</button>
+      </form>
+      <div class="bottom-text">
+        <a href="#">Forgot password?</a> | 
+        <a href="signup.html">Create account</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const togglePassword = document.getElementById("togglePassword");
+    const password = document.getElementById("password");
+
+    togglePassword.addEventListener("click", () => {
+      const type = password.getAttribute("type") === "password" ? "text" : "password";
+      password.setAttribute("type", type);
+      togglePassword.textContent = type === "password" ? "👁️" : "🙈";
+    });
+  </script>
+</body>
+</html>

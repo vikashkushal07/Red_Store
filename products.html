@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+     <meta charset="UTF-8">
+    <link rel="stylesheet" href="productpage.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.6.0/css/fontawesome.min.css">
+</head>
+<body>
+    
+    <div class="Container">
+     <div class="navbar">
+     <div class="logo">
+        <img src="logo.png" width="130px"> 
+         </div>
+     <nav>
+         <ul id="Menu]Items">
+             <li><a href="homepage.html">Home</a></li>
+             <li><a href="">Product</a></li>
+             <li><a href="">About</a></li>
+             <li><a href="">Contact</a></li>
+             <li><a href="signup.html">Signup</a></li>
+             <li><a href="login.html">Login</a></li>
+         
+         </ul>
+         </nav>
+         <img src="images/cart.png" width="30px" height="30px">
+         <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+    </div>   
+   
+    </div>
+        <div class="small-container">
+         <div class="row row-2">
+            <h2>All Products</h2>
+             <select>
+                 <option>Default Sorting</option>
+                 <option>Short By Price</option>
+                 <option>Short By Popularity</option>
+                 <option>Short By rating</option>
+                 <option>Short by Sale</option>
+             
+             </select>
+            </div>   
+            
+            
+    <div class="row">
+        <div class="col-4">
+            <img src="images/product-1.jpg">
+            <h4>Printed Red T-Shirt</h4>
+            <p>₹2,400.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-2.jpg">
+            <h4>Casual Shoes</h4>
+            <p>₹3,999.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-3.jpg">
+            <h4>Track Pants</h4>
+            <p>₹1,499.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-4.jpg">
+            <h4> T-Shirt</h4>
+            <p>₹1,350.00</p>
+        </div>
+        </div>
+            <div class="row">
+        <div class="col-4">
+            <img src="images/product-5.jpg">
+            <h4>Ankle Shoes</h4>
+            <p>₹4,799.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-6.jpg">
+            <h4>Puma T-shirt</h4>
+            <p>₹3,299.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-7.jpg">
+            <h4>Pairs Of Ankle Socks</h4>
+            <p>₹999.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-8.jpg">
+            <h4>Watch For Men</h4>
+            <p>₹1,650.00</p>
+        </div>
+            <div class="row">
+        <div class="col-4">
+            <img src="images/product-9.jpg">
+            <h4>Watch For Men</h4>
+            <p>₹1,999.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-10.jpg">
+            <h4>Casual Shoes</h4>
+            <p>₹2,599.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-11.jpg">
+            <h4>Shoes</h4>
+            <p>₹1,999.00</p>
+        </div>
+        <div class="col-4">
+            <img src="images/product-12.jpg">
+            <h4>Track Pant</h4>
+            <p>₹1,800.00</p>
+        </div>
+        
+        </div>
+        </div>
+        
+        <div class="page-btn">
+            <span>1</span>
+            <span>2</span>
+            <span>3</span>
+            <span>4</span>
+            <span>&#8594;</span>
+            </div>
+    </div>
+    <!--------Footer------->
+    <div class="footer">
+    <div class="container">
+        <div class="row">
+        <div class="footer-col-1">
+            <h3>Download Our App</h3>
+            <p>Download App For Android And Ios Mobile Phone</p>
+            <div class="app-logo">
+            <img src="images/play-store.png">
+            <img src="images/app-store.png">
+            </div>
+            </div>
+             <div class="footer-col-2">
+            <img src="images/logo-white.png">
+            <p>Our Purpose Is To sustainably Make The Pleasure And Benefits Of Sports Accessible To The Many. </p>
+            </div>
+             <div class="footer-col-3">
+            <h3>Usefull links</h3>
+                 <ul>
+                     <li> Coupons</li>
+                     <li> Blog post</li>
+                     <li> Return polict</li>
+                     <li> Join affiliate</li>
+                 </ul>
+            </div>
+            <div class="footer-col-4">
+            <h3>Follow Us</h3>
+                 <ul>
+                     <li> Facebook</li>
+                     <li> Twitter</li>
+                     <li> Instagram</li>
+                     <li> Youtube</li>
+                 </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2025 - By Vikash</p>
+        </div>
+    </div>
+    <!------js for toggle menu-------->
+    <script>
+    var menuItems = documents.getElementById("MenuItems")
+    menuItems.style.maxHeight="0px";
+        
+        function menutoggle(){
+            if(menuItems.style.maxHeight=="0px")
+            {
+            menuItems.style.maxHeight=="200px";
+            }
+            else{
+               menuItems.style.maxHeight=="0px";  
+        }
+        }
+    </script>
+    
+    
+</body>
+</html>
